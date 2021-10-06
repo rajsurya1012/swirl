@@ -1,0 +1,468 @@
+<?xml version="1.0" ?>
+<robot name="swirl" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find swirl_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find swirl_description)/urdf/swirl.trans" />
+<xacro:include filename="$(find swirl_description)/urdf/swirl.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.6922686540964833 -0.26128073596365803 0.2158474261194058"/>
+    <mass value="479.497224901014"/>
+    <inertia ixx="12.089536" ixy="-0.0" ixz="-0.0" iyy="12.346832" iyz="-0.186766" izz="19.577149"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component7_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.4590351472019165e-07 -7.473281049552583e-09 -0.0742391858641826"/>
+    <mass value="6.795460093227189"/>
+    <inertia ixx="0.020347" ixy="0.0" ixz="0.0" iyy="0.035138" iyz="0.0" izz="0.02467"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.872269 0.445082 -0.037605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.872269 0.445082 -0.037605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component7_2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.4590351494223626e-07 -7.473281854464275e-09 -0.07423918586418317"/>
+    <mass value="6.795460093227189"/>
+    <inertia ixx="0.020347" ixy="0.0" ixz="-0.0" iyy="0.035138" iyz="-0.0" izz="0.02467"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.872269 0.085082 -0.037605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component7_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.872269 0.085082 -0.037605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component7_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component7_3">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.4590351483121395e-07 -7.473281549152944e-09 -0.0742391858641821"/>
+    <mass value="6.795460093227189"/>
+    <inertia ixx="0.020347" ixy="0.0" ixz="-0.0" iyy="0.035138" iyz="-0.0" izz="0.02467"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.512269 0.445082 -0.037605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component7_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.512269 0.445082 -0.037605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component7_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component7_4">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.4590351483121395e-07 -7.47328150751958e-09 -0.07423918586418257"/>
+    <mass value="6.795460093227189"/>
+    <inertia ixx="0.020347" ixy="0.0" ixz="-0.0" iyy="0.035138" iyz="-0.0" izz="0.02467"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.512269 0.085082 -0.037605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component7_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.512269 0.085082 -0.037605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component7_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component6_4">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.512269 0.085082 -0.062605"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.512269 0.085082 -0.062605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component6_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.512269 0.085082 -0.062605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component6_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component6_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.872269 0.445082 -0.062605"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.872269 0.445082 -0.062605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.872269 0.445082 -0.062605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component6_3">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.512269 0.445082 -0.062605"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.512269 0.445082 -0.062605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component6_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.512269 0.445082 -0.062605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component6_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component6_2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.872269 0.085082 -0.062605"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.872269 0.085082 -0.062605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component6_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.872269 0.085082 -0.062605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component6_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.512269 0.445082 -0.087605"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.512269 0.445082 -0.087605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.512269 0.445082 -0.087605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2_2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.872269 0.445082 -0.087605"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.872269 0.445082 -0.087605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component2_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.872269 0.445082 -0.087605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component2_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component4_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.512269 0.085082 -0.087605"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.512269 0.085082 -0.087605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.512269 0.085082 -0.087605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component3_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.872269 0.085082 -0.087605"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.872269 0.085082 -0.087605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.872269 0.085082 -0.087605"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component8_3">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.4590351483121395e-07 -7.473281327108339e-09 2.331599293636799e-07"/>
+    <mass value="6.1653755826699665"/>
+    <inertia ixx="0.019267" ixy="0.0" ixz="0.0" iyy="0.010918" iyz="0.0" izz="0.010918"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.512269 0.445082 0.062395"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component8_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.512269 0.445082 0.062395"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component8_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component8_2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.4590351516428086e-07 -7.473280771996826e-09 2.331599286836683e-07"/>
+    <mass value="6.1653755826699665"/>
+    <inertia ixx="0.019267" ixy="0.0" ixz="0.0" iyy="0.010918" iyz="0.0" izz="0.010918"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.872269 0.445082 0.062395"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component8_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.872269 0.445082 0.062395"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component8_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component8_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.4590351494223626e-07 -7.473281854464275e-09 2.3315992807998454e-07"/>
+    <mass value="6.1653755826699665"/>
+    <inertia ixx="0.019267" ixy="-0.0" ixz="-0.0" iyy="0.010918" iyz="0.0" izz="0.010918"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.872269 0.085082 0.062395"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.872269 0.085082 0.062395"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component8_4">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.4590351505325856e-07 -7.473281535275156e-09 2.3315992875305724e-07"/>
+    <mass value="6.1653755826699665"/>
+    <inertia ixx="0.019267" ixy="0.0" ixz="0.0" iyy="0.010918" iyz="0.0" izz="0.010918"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.512269 0.085082 0.062395"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component8_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.512269 0.085082 0.062395"/>
+    <geometry>
+      <mesh filename="package://swirl_description/meshes/Component8_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid5" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.025"/>
+  <parent link="Component6_1"/>
+  <child link="Component7_1"/>
+</joint>
+
+<joint name="Rigid6" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.025"/>
+  <parent link="Component6_2"/>
+  <child link="Component7_2"/>
+</joint>
+
+<joint name="Rigid7" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.025"/>
+  <parent link="Component6_3"/>
+  <child link="Component7_3"/>
+</joint>
+
+<joint name="Rigid8" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.025"/>
+  <parent link="Component6_4"/>
+  <child link="Component7_4"/>
+</joint>
+
+<joint name="RB_swirl" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.025"/>
+  <parent link="Component4_1"/>
+  <child link="Component6_4"/>
+  <axis xyz="-0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="LF_swirl" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.025"/>
+  <parent link="Component2_2"/>
+  <child link="Component6_1"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="RF_swirl" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.025"/>
+  <parent link="Component2_1"/>
+  <child link="Component6_3"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="LB_swirl" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.025"/>
+  <parent link="Component3_1"/>
+  <child link="Component6_2"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="Rigid14" type="fixed">
+  <origin rpy="0 0 0" xyz="0.512269 -0.445082 0.087605"/>
+  <parent link="base_link"/>
+  <child link="Component2_1"/>
+</joint>
+
+<joint name="Rigid15" type="fixed">
+  <origin rpy="0 0 0" xyz="0.872269 -0.445082 0.087605"/>
+  <parent link="base_link"/>
+  <child link="Component2_2"/>
+</joint>
+
+<joint name="Rigid16" type="fixed">
+  <origin rpy="0 0 0" xyz="0.512269 -0.085082 0.087605"/>
+  <parent link="base_link"/>
+  <child link="Component4_1"/>
+</joint>
+
+<joint name="Rigid17" type="fixed">
+  <origin rpy="0 0 0" xyz="0.872269 -0.085082 0.087605"/>
+  <parent link="base_link"/>
+  <child link="Component3_1"/>
+</joint>
+
+<joint name="RF_wheel" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.1"/>
+  <parent link="Component7_3"/>
+  <child link="Component8_3"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="LF_wheel" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.1"/>
+  <parent link="Component7_1"/>
+  <child link="Component8_2"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="LB_wheel" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.1"/>
+  <parent link="Component7_2"/>
+  <child link="Component8_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="RB_wheel" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.1"/>
+  <parent link="Component7_4"/>
+  <child link="Component8_4"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+</robot>

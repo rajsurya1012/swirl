@@ -1,0 +1,39 @@
+swirl_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  RB_swirl_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RB_swirl
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  LF_swirl_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: LF_swirl
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RF_swirl_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RF_swirl
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  LB_swirl_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: LB_swirl
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RF_wheel_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RF_wheel
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  LF_wheel_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: LF_wheel
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  LB_wheel_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: LB_wheel
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RB_wheel_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RB_wheel
+    pid: {p: 100.0, i: 0.01, d: 10.0}

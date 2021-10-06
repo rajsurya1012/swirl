@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find swirl_description)/launch/controller.yaml" command="load"/>
+<node args="RB_swirl_position_controller LF_swirl_position_controller RF_swirl_position_controller LB_swirl_position_controller RF_wheel_position_controller LF_wheel_position_controller LB_wheel_position_controller RB_wheel_position_controller joint_state_controller " name="controller_spawner" ns="swirl" output="screen" pkg="controller_manager" respawn="false" type="spawner"/>
+<node name="robot_state_publisher" output="screen" pkg="robot_state_publisher" respawn="false" type="robot_state_publisher">
+  <remap from="/joint_states" to="/swirl/joint_states"/>
+</node>
+
+</launch>
